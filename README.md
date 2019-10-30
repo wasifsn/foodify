@@ -13,7 +13,7 @@ also it includes to add the recipe to your cart, give a like to a particular rec
   - (2) Build: **_(For Deployment)_** - **_$ npm run build_** 
   - (3) Hot Reloading: **_(Reloads and Rebuilds the app on each Save)_** - **_$ npm run serve_** - using this command a new Browser window will automatically open and the **_Foodify_** App will be loaded in that window
 
-  ## This App uses Food2Fork Api which allows 50 requests only per day for free Users so i suggest you to signup to get an API Key [here](https://www.food2fork.com/about/api)
+  ## This App uses Food2Fork Api which allows 50 requests only per day for free Usage, so i suggest you to signup to get an API Key [here is the link for signing up](https://www.food2fork.com/about/api)
   ### Instructions to Change the Api Key 
   * go to the Config file and replace the key variable with your **_API KEY_** 
   
