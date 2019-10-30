@@ -1,6 +1,6 @@
 # Foodify
-This is a pure Javascript Based Single Page App which lets you search any Food Recipe you want to make, 
-also it includes to add the recipe to your cart, give a like to a particular recipe which you loved
+This is a Javascript Based Single Page App which lets you search any Food Recipe you want to make, 
+also it includes to add the recipe to your cart, give a like to a particular recipe which you loved...
 
 ### Description
 ##### This App is In Development, below are the steps which can be follwed to run current flow at your local machine
@@ -12,7 +12,11 @@ also it includes to add the recipe to your cart, give a like to a particular rec
   - (1) Development: **_$ npm run dev_**
   - (2) Build: **_(For Deployment)_** - **_$ npm run build_** 
   - (3) Hot Reloading: **_(Reloads and Rebuilds the app on each Save)_** - **_$ npm run serve_** - using this command a new Browser window will automatically open and the **_Foodify_** App will be loaded in that window
+
+  ## This App uses Food2Fork Api which allows 50 requests only per day for free Users so i suggest you to signup to get an API Key [here](https://www.food2fork.com/about/api)
+  ### Instructions to Change the Api Key 
+  * go to the Config file and replace the key variable with your **_API KEY_** 
   
-  ### If you like the App please give a Star to my Repo
+  ## If you like the App please give a Star to my Repo
 
 
