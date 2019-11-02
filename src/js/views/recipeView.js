@@ -1,7 +1,13 @@
 import { elements, renderLoader } from "./base";
+import { fraction } from "fractional";
 
 export const clearRecipe = () => {
   elements.recipe.innerHTML = "";
+};
+
+const formatCount = () => {
+  if (count) {
+  }
 };
 
 const createIngredient = ingredient => `
@@ -9,6 +15,7 @@ const createIngredient = ingredient => `
     <svg class="recipe__icon">
     <use href="img/icons.svg#icon-check"></use>
 </svg>
+
 <div class="recipe__count">${ingredient.count}</div>
 <div class="recipe__ingredient">
     <span class="recipe__unit">${ingredient.unit}</span>

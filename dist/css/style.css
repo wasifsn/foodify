@@ -201,7 +201,9 @@ body {
     transform: rotate(360deg);
   }
 }
-
+a:visited{
+  color: #f48982;
+}
 .header {
   grid-area: head;
   background-color: #f9f5f3;
