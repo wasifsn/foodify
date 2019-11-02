@@ -4,7 +4,7 @@ export const clearRecipe = () => {
   elements.recipe.innerHTML = "";
 };
 
-export const createIngredient = ingredient => `
+const createIngredient = ingredient => `
 <li class="recipe__item">
     <svg class="recipe__icon">
     <use href="img/icons.svg#icon-check"></use>
@@ -98,5 +98,5 @@ export const renderRecipe = recipe => {
 </div>
     `;
 
-  elements.recipe.insertAdjacentElement("afterbegin", markup);
+  elements.recipe.insertAdjacentHTML("afterbegin", markup);
 };

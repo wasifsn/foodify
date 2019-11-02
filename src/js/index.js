@@ -17,6 +17,7 @@ const state = {
   // search: null
 };
 
+window.s = state;
 /*
  *Controller for Search
  */
@@ -88,16 +89,19 @@ const controlRecipe = async () => {
     window.r = state.recipe;
     try {
       //get recipe data and parse ingredients
+
       await state.recipe.getRecipe();
       state.recipe.parseIngredients();
 
       //calculate servings and time
       state.recipe.calcTime();
-      state.recipe.calServings();
+      state.recipe.calcServings();
+
       // Render recipe
       clearLoader();
       recipeView.renderRecipe(state.recipe);
     } catch (err) {
+      console.log(err);
       console.log("there was an Error Processing the recipe");
     }
   }

@@ -11,6 +11,7 @@ export default class Search {
         `${proxy}https://www.food2fork.com/api/search?key=${key}&q=${this.query}`
       );
       this.result = res.data.recipes;
+      console.log(res);
     } catch (error) {
       console.log(error);
     }
