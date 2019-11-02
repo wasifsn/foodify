@@ -33,6 +33,17 @@ export default class Recipe {
     this.servings = 4;
   }
 
+  updateServings(type) {
+    //servings
+    const newServings = type === "dec" ? this.servings-- : this.servings++;
+
+    //Ingredients
+    this.ingredients.forEach(ing => {
+      ing.count *= newServings / this.servings;
+    });
+    this.servings = newServings;
+  }
+
   parseIngredients() {
     const unitsLong = [
       "tablespoons",

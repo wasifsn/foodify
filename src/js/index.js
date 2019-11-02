@@ -2,6 +2,7 @@
 import axios from "axios";
 import Search from "./models/Search";
 import Recipe from "./models/Recipe";
+import List from "./models/List";
 import * as searchView from "./views/SearchView";
 import * as recipeView from "./views/recipeView";
 
@@ -84,6 +85,12 @@ const controlRecipe = async () => {
     //prepare UI for the Changes
     recipeView.clearRecipe();
     renderLoader(elements.recipe);
+
+    //Highlight select
+    if (state.search) {
+      searchView.highlightSelected(id);
+    }
+
     // Create a new recipe object
     state.recipe = new Recipe(id);
     window.r = state.recipe;
@@ -110,3 +117,23 @@ const controlRecipe = async () => {
 ["hashchange", "load"].forEach(event => {
   window.addEventListener(event, controlRecipe);
 });
+
+//Handling button clicks
+
+elements.recipe.addEventListener("click", e => {
+  if (e.target.matches(".btn-decrease, .btn-decrease *")) {
+    //decrease button is clicked
+    if (state.recipe.servings > 1) {
+      state.recipe.updateServings("dec");
+      recipeView.updateServingsIngredients(state.recipe);
+    }
+  }
+
+  if (e.target.matches(".btn-increase, .btn-increase *")) {
+    //increase button is clicked
+    state.recipe.updateServings("inc");
+    recipeView.updateServingsIngredients(state.recipe);
+  }
+});
+
+window.l = new List();
