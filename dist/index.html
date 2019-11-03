@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/cb72a04bc5.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700"
       rel="stylesheet"
@@ -16,7 +20,11 @@
   <body>
     <div class="container">
       <header class="header">
-        <img src="img/logo.png" alt="Logo" class="header__logo" />
+        <!-- <img src="img/logo.png" alt="Logo" class="header__logo" /> -->
+        <div class="logo header__logo">
+          <div><i class="fas fa-utensils fa-3x"></i></div>
+          <div><h1 class="logo_text">Foodify</h1></div>
+        </div>
         <form class="search">
           <input
             type="text"
@@ -426,14 +434,13 @@
         </ul>
 
         <div class="copyright">
-          &copy; by Wasif Naquvi. Powered by
+          &copy; by <a href="https://github.com/wasifsn">Wasif Naquvi</a> .
+          Powered by
           <a href="http://food2fork.com" target="_blank" class="link"
             >Food2Fork.com</a
           >.
         </div>
       </div>
     </div>
-
-    <!-- <script  src="js/bundle.js"></script> -->
   <script type="text/javascript" src="js/bundle.js"></script></body>
 </html>
