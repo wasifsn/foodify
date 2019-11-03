@@ -3,7 +3,7 @@ This is a Javascript Based Single Page App which uses MVC approach, lets you sea
 
 ### Description
 ##### This App is In Development, below are the steps which can be follwed to run current flow at your local machine
-#### P.S. - I will be  deploying the app once its completed, and this app is for Educatiional Purposes which shows the modern usage of ES6+ syntax, usage of Webpack for app bundling and Babel to make it browser compatible 
+#### P.S. - I will be  deploying the app once Soon, and this app is for Educatiional Purposes which shows the modern usage of ES6+ syntax, usage of Webpack for app bundling and Babel to make it browser compatible 
 
 * Download [Node.js](https://nodejs.org/en/download/) as we need to install the dependencies
 * To install the Dependecies and Dev Dependecies run command **_$ npm install_** in the directory where you have cloned the repo
